@@ -1,0 +1,18 @@
+
+#link of your private shopify app
+graphql:
+  endpoint:
+    url: https://YourShopID.myshopify.com/api/2021-10/graphql.json
+
+#Storefront API access token
+shopify:
+  access-token: yourTokenHere
+
+#We don't need the web server to start (it would start due to e the Spring reactive dependencies)
+#We need to allow been overriding to override generated getClient for passing our custom ExchangeFilter
+spring:
+  main:
+    web-application-type: none
+    allow-bean-definition-overriding: true
+
+
