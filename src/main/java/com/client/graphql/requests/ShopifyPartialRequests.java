@@ -22,9 +22,9 @@ public class ShopifyPartialRequests implements IRequests {
      * @param first              how many collections to return in response
      * @param after              will use this in pagination in the future
      * @param collectionSortKeys how do we want returned collections to be sorted
-     *
-     *   I currently dont need BindValues but in future if I may need to include products in response I can easily
-     *   pass products parameters with params map
+     *                           <p>
+     *                           I currently dont need BindValues but in future if I may need to include products in response I can easily
+     *                           pass products parameters with params map
      */
     @Override
     public CollectionConnection getCollections(Integer first, String after, CollectionSortKeys collectionSortKeys) throws GraphQLRequestPreparationException, GraphQLRequestExecutionException {

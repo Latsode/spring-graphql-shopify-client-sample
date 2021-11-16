@@ -40,6 +40,12 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>com.graphql-java-generator</groupId>
+            <artifactId>graphql-java-client-dependencies</artifactId>
+            <type>pom</type>
+            <version>${graphql-maven-plugin.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.graphql-java</groupId>
             <artifactId>graphql-java</artifactId>
             <version>17.0</version>
