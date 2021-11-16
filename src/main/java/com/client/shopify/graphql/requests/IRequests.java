@@ -1,4 +1,4 @@
-package com.client.graphql.requests;
+package com.client.shopify.graphql.requests;
 
 import com.client.graphql.*;
 import com.graphql_java_generator.exception.GraphQLRequestExecutionException;

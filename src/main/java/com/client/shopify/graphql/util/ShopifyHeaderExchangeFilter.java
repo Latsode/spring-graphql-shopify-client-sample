@@ -1,4 +1,4 @@
-package com.client.graphql.util;
+package com.client.shopify.graphql.util;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

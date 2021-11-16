@@ -1,10 +1,11 @@
-package com.client.graphql;
+package com.client.shopify.graphql;
 
 
-import com.client.graphql.requests.ShopifyFullRequests;
-import com.client.graphql.requests.ShopifyPartialRequests;
+import com.client.graphql.ProductSortKeys;
+import com.client.shopify.graphql.requests.ShopifyFullRequests;
+import com.client.shopify.graphql.requests.ShopifyPartialRequests;
 import com.client.graphql.util.QueryRootExecutor;
-import com.client.graphql.util.ShopifyHeaderExchangeFilter;
+import com.client.shopify.graphql.util.ShopifyHeaderExchangeFilter;
 import com.graphql_java_generator.client.GraphQLConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -56,7 +57,7 @@ public class ClientGraphqlApplication implements CommandLineRunner {
         System.out.println("\n||||| Get first number of products in specific collection |||||\n");
         System.out.println(shopifyPartialRequests.getProductsInCollection(null,"nike",50,null,ProductSortKeys.BEST_SELLING,1));
         System.out.println("\n||||| Get first number of products in the store |||||\n");
-        System.out.println(shopifyPartialRequests.getProducts(50,null,ProductSortKeys.BEST_SELLING,2,3,5));
+        System.out.println(shopifyPartialRequests.getProducts(50,null, ProductSortKeys.BEST_SELLING,2,3,5));
         System.out.println("\n||||| Get specific Product |||||\n");
         System.out.println(shopifyPartialRequests.getProductByHandleOrID(null, "racing-shoes", 2, 1, 5));
         System.out.println("\n||||| Just Testing Full Request Should give same result as first query |||||\n");
