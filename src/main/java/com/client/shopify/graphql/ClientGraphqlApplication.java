@@ -52,7 +52,7 @@ public class ClientGraphqlApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // You can check it out what all these parameters mean at official Shopify StoreFront API documentation
-        System.out.println("\n||||| Get First number of collections |||||\n");
+/*        System.out.println("\n||||| Get First number of collections |||||\n");
         System.out.println(shopifyPartialRequests.getCollections(1,null,null));
         System.out.println("\n||||| Get first number of products in specific collection |||||\n");
         System.out.println(shopifyPartialRequests.getProductsInCollection(null,"nike",50,null,ProductSortKeys.BEST_SELLING,1));
@@ -61,7 +61,7 @@ public class ClientGraphqlApplication implements CommandLineRunner {
         System.out.println("\n||||| Get specific Product |||||\n");
         System.out.println(shopifyPartialRequests.getProductByHandleOrID(null, "racing-shoes", 2, 1, 5));
         System.out.println("\n||||| Just Testing Full Request Should give same result as first query |||||\n");
-        System.out.println(shopifyFullRequests.getCollections(1,null,null));
+        System.out.println(shopifyFullRequests.getCollections(1,null,null));*/
 
     }
 }

@@ -15,7 +15,7 @@
     <description>client-graphql</description>
     <properties>
         <java.version>11</java.version>
-        <graphql-maven-plugin.version>1.17.3</graphql-maven-plugin.version>
+        <graphql-maven-plugin.version>1.18</graphql-maven-plugin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -32,19 +32,8 @@
             <groupId>com.graphql-java-generator</groupId>
             <artifactId>graphql-java-runtime</artifactId>
             <version>${graphql-maven-plugin.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.graphql-java</groupId>
-                    <artifactId>graphql-java-spring-boot-starter-webmvc</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-        <dependency>
-            <groupId>com.graphql-java-generator</groupId>
-            <artifactId>graphql-java-client-dependencies</artifactId>
-            <type>pom</type>
-            <version>${graphql-maven-plugin.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>com.graphql-java</groupId>
             <artifactId>graphql-java</artifactId>
